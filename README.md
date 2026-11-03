@@ -1,38 +1,28 @@
-# 📦 Inventory Management System (Python OOP)
+# Python Inventory — Object-Oriented Programming Exercise
 
-This project implements a basic inventory system using **Object-Oriented Programming** in Python.
+A small in-memory console application for adding products, searching by name,
+listing inventory and calculating stock value. It demonstrates class boundaries,
+basic validation and exception handling.
 
----
+[Engineering portfolio](https://github.com/miguelcastu/miguelcastu) · [Project directory](https://github.com/miguelcastu/miguelcastu/blob/main/PROJECTS.md)
 
-## 🧱 Project Structure
+## Implementation
 
-### Class `Product`
-- Attributes: `name`, `price`, `quantity`
-- Input validation
-- Methods:
-  - `update_price()`
-  - `update_quantity()`
-  - `calculate_total_value()`
-  - `__str__()`
+The source uses Spanish identifiers:
 
-### Class `Inventory`
-- Stores a list of `Product` objects
-- Methods:
-  - `add_product()`
-  - `search_product()`
-  - `calculate_inventory_value()`
-  - `list_products()`
+- `Producto`: name, price and quantity validation; price/quantity updates and
+  `calcular_valor_total()`.
+- `Inventario`: `agregar_producto()`, `buscar_producto()`,
+  `calcular_valor_inventario()` and `listar_productos()`.
+- `menu_principal()`: interactive console loop.
 
-### Interactive Console Menu
-The user can:
-- Add new products  
-- Search by name  
-- List all products  
-- Calculate total inventory value  
-- Exit the system  
+With Python 3, from the repository root:
 
----
-
-## ▶️ Run the Program
-```bash
+```shell
 python sistema_inventario.py
+```
+
+The interface is Spanish and values live only in process memory. Exiting loses
+the inventory. There is no database, API, user authentication or automated suite.
+This is a foundational learning exercise; the portfolio's detection platforms
+demonstrate the larger engineering work.
